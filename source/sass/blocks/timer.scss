@@ -1,0 +1,48 @@
+.timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 25.5rem;
+  min-height: 6.2rem;
+  margin: 1rem 0 0 0;
+
+  @media (max-width: $mobile_max) {
+    min-width: 23.5rem;
+  }
+}
+
+.timer__field-counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 6.5rem;
+  min-height: 4rem;
+  margin-bottom: 0.7rem;
+  border-radius: 10px;
+  background: $button_color_header;
+}
+
+.timer__field-counter p {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: $bg_first_color;
+
+  @media (max-width: $mobile_max) {
+    font-size: 1.7rem;
+  }
+}
+
+.timer__signature {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.46rem;
+  font-weight: 600;
+  text-align: center;
+}

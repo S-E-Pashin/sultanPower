@@ -1,0 +1,160 @@
+.polygamy {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.polygamy__wrapper {
+  margin-bottom: 3.6rem;
+  border-radius: 15px;
+  background-color: $bg_fourth_color;
+
+  @media (max-width: $mobile_max) {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.polygamy__field {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2.1rem 3.3rem;
+  border: 2px solid $bg_first_color;
+  border-radius: 15px;
+
+  @media (max-width: $mobile_max) {
+    margin: 2.5rem 1.9rem 1.6rem 1.9rem;
+  }
+}
+
+.polygamy__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3.7rem;
+
+  @media (max-width: $mobile_max) {
+    margin-top: 2.2rem;
+  }
+}
+
+.polygamy__heading {
+  width: 51.8rem;
+  margin: 0;
+  font-size: 2.4rem;
+  line-height: 2.92rem;
+  font-weight: 400;
+  text-align: center;
+  color: $bg_first_color;
+  letter-spacing: 0;
+
+  @media (max-width: $mobile_max) {
+    width: 14rem;
+    font-size: 1.4rem;
+    line-height: 1.72rem;
+  }
+
+  & span {
+    font-weight: 600;
+
+    @media (max-width: $mobile_max) {
+      width: 16rem;
+      white-space: nowrap;
+    }
+  }
+}
+
+.polygamy__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 124.9rem;
+  height: 22.6rem;
+  margin: 1.9rem 2.2rem 3.4rem 2.2rem;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $mobile_max) {
+    flex-direction: column;
+    justify-content: start;
+    width: 33rem;
+    height: auto;
+    margin: 4.4rem 2.2rem .8rem 2.2rem;
+  }
+}
+
+.polygamy__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 39.1rem;
+  height: 22.5rem;
+  border-radius: 20px;
+  background-color: $bg_five_color;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media (max-width: $mobile_max) {
+    width: 31.8rem;
+    height: 22.6rem;
+    margin-bottom: 3.6rem;
+  }
+
+  &-first {
+    background-image: url('../img/bg-rite.jpg');
+
+    @media (max-width: $mobile_max) {
+      .polygamy__item-header {
+        margin-top: 15rem;
+      }
+    }
+  }
+
+  &-second {
+    background-image: url('../img/bg-stimulants.jpg');
+  }
+
+  &-third {
+    background-image: url('../img/bg-gymnastics.jpg');
+  }
+}
+
+.polygamy__item-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 27rem;
+  margin-top: 12.6rem;
+}
+
+.polygamy__item-heading {
+  margin: 0;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  & span {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+  }
+}

@@ -1,0 +1,48 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: $font;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: $text_first_color;
+}
+
+html {
+  font-size: calc(#{$base_font} * 100vw / 1440);
+  box-sizing: border-box;
+
+  @media (max-width: $mobile_max) {
+    font-size: calc(#{$base_font} * 100vw / 480);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually_hidden:not(:active),
+input[type="checkbox"].visually_hidden,
+input[type="radio"].visually_hidden {
+  position: absolute;
+  width: toRem(1);
+  height: toRem(1);
+  margin: toRem(-1);
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
